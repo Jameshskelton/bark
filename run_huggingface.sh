@@ -39,4 +39,5 @@ git init
 git add .
 git commit -m 'init commit'
 gh repo create $space_name --private --source=. --remote=upstream --push
+sleep 5
 pspace init . -t $template
