@@ -34,10 +34,10 @@ rm -r -f $space_name
 
 # option two: GHCR
 
-git remote add origin 
+# git remote add origin git@github.com:$fullname/$space_name.git
 git init
 git add .
 git commit -m 'init commit'
-gh repo create $space_name --private --source=. --remote=origin --push
+gh repo create $space_name --private --source=. --push
 sleep 5
 pspace init . -t $template
