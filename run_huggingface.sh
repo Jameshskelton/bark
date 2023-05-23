@@ -38,6 +38,6 @@ rm -r -f $space_name
 git init
 git add .
 git commit -m 'init commit'
-gh repo create $space_name --private --source=. --remote=upstream --push
+gh repo create $space_name --private --source=. --push
 sleep 5
 pspace init . -t $template
