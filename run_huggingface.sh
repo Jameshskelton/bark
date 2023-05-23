@@ -20,9 +20,10 @@ done
 
 
 git-lfs clone $url
-mkdir app
-mv $space_name/* ./app/
-rm -r -f $space_name
+# mkdir app
+# mv $space_name/* ./app/
+# rm -r -f $space_name
+# cd $space_name
 
 # option one: Dockerhub
 
