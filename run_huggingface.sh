@@ -34,7 +34,7 @@ rm -r -f $space_name
 
 # option two: GHCR
 
-git remote add origin git@github.com:$fullname/$space_name.git
+# git remote add origin git@github.com:$fullname/$space_name.git
 git init
 git add .
 git commit -m 'init commit'
