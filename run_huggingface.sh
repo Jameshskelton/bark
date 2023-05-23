@@ -19,7 +19,7 @@ done
 # export date=$(date +%m%B-%T)
 
 
-git-lfs clone $url
+# git-lfs clone $url
 # mkdir app
 # mv $space_name/* ./app/
 # rm -r -f $space_name
