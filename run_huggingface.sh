@@ -39,6 +39,6 @@ done
 git init
 git add .
 git commit -m 'init commit'
-gh repo create $space_name --private --source=. --push --remote=origin
-sleep 5
+gh repo create $space_name --private --source=. --push
+sleep 10
 pspace init . -t $template
