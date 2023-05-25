@@ -32,16 +32,15 @@ git-lfs clone $url
 # pspace up
 
 
-# bash run_huggingface.sh -u https://huggingface.co/spaces/suno/bark -s bark -d jameshskelton -t eh -q jameshskelton/bark -z test6_version
+# bash run_huggingface.sh -u https://huggingface.co/spaces/suno/bark -s bark -d jameshskelton -t eh 
 # option two: Github actions build
 mkdir app
 mv $space_name/* ./app/
 rm -r -f $space_name
-git remote add origin git@github.com:$fullname/$space_name.git
 git init
 git add .
 git commit -m 'init commit'
-gh repo create $space_name --private --source=. --push
+gh repo create $space_name --private --source=. --push --remote origin
 sleep 10
-pspace init . -t $template
+pspace init . 
 pspace up
