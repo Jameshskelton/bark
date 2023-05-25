@@ -40,7 +40,7 @@ rm -r -f $space_name
 git init
 git add .
 git commit -m 'init commit'
-gh repo create $space_name --private --source=. --push --remote origin
+gh repo create $space_name --private --source=. --push 
 sleep 10
 pspace init . 
 pspace up
