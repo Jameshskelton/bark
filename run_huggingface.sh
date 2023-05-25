@@ -43,6 +43,7 @@ gh repo create $space_name --private --source=. --push
 git init
 git add .
 git commit -m 'init commit'
+git push
 sleep 10
 # pspace init . 
 # pspace up
