@@ -44,6 +44,6 @@ git init
 git add .
 git commit -m 'init commit'
 git push --set-upstream origin main
-sleep 10
+sleep 5
 # pspace init . 
 # pspace up
