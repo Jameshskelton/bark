@@ -39,7 +39,7 @@ mv $space_name/* ./app/
 rm -r -f $space_name
 gh repo create $space_name --private --source=. --push
 
-git remote add origin github.com:$docker_username/$space_name.git
+# git remote add origin github.com:$docker_username/$space_name.git
 git init
 git add .
 git commit -m 'init commit'
