@@ -43,7 +43,7 @@ git remote add origin github.com:$docker_username/$space_name.git
 git init
 git add .
 git commit -m 'init commit'
-git push
+git push --set-upstream origin main
 sleep 10
 # pspace init . 
 # pspace up
