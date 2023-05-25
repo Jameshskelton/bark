@@ -37,10 +37,11 @@ git-lfs clone $url
 mkdir app
 mv $space_name/* ./app/
 rm -r -f $space_name
+git remote add origin git@github.com:$docker_username/$space_name.git
 git init
 git add .
 git commit -m 'init commit'
-gh repo create $space_name --private --source=. --push 
+gh repo create $space_name --private --source=. --push
 sleep 10
 pspace init . 
 pspace up
